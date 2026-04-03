@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================== META ===================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nityanand Payasi – Flutter & Full Stack Developer. Building scalable mobile & web applications. Available for remote work." />
+  <meta name="keywords" content="Flutter Developer, Full Stack Developer, Dart, Node.js, Remote Developer, Bloc, PostgreSQL, Portfolio" />
+  <meta name="author" content="Nityanand Payasi" />
+  <meta property="og:title" content="Nityanand Payasi | Flutter & Full Stack Developer" />
+  <meta property="og:description" content="Building Scalable Mobile & Web Applications. Available for Remote Work." />
+  <meta property="og:type" content="website" />
+  <title>Nityanand Payasi | Flutter &amp; Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       STICKY NAVBAR
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Nityanand Payasi home">NP</a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home"     class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"    class="nav-link"        role="menuitem">About</a></li>
+        <li role="none"><a href="#skills"   class="nav-link"        role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"     class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#services"     class="nav-link" role="menuitem">Services</a></li>
+        <li role="none"><a href="#contact"      class="nav-link" role="menuitem">Contact</a></li>
+        <li role="none">
+          <a href="assets/resume.pdf" download class="btn btn-resume" aria-label="Download Resume">
+            <i class="fas fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ================================================
+       HERO SECTION
+  ================================================ -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <!-- Background decorative grid -->
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <!-- Glow orb -->
+    <div class="hero-glow-orb" aria-hidden="true"></div>
+
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-content" data-reveal>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Nityanand <span class="accent">Payasi</span></h1>
+
+        <!-- Typing animation -->
+        <div class="hero-typing" aria-live="polite">
+          <span class="typing-prefix">I'm a&nbsp;</span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-tagline">Building Scalable Mobile &amp; Web Applications</p>
+
+        <p class="hero-remote">
+          <i class="fas fa-globe" aria-hidden="true"></i>&nbsp; Available for Remote Work
+          &nbsp;|&nbsp;
+          <i class="fas fa-clock" aria-hidden="true"></i>&nbsp; IST Timezone
+          &nbsp;|&nbsp;
+          <i class="fas fa-handshake" aria-hidden="true"></i>&nbsp; Flexible with US/Europe Clients
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code" aria-hidden="true"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Hire Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Decorative Code Card -->
+      <div class="hero-visual" data-reveal>
+        <div class="code-card" aria-hidden="true">
+          <!-- Fake terminal title bar -->
+          <div class="code-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-filename">developer.dart</span>
+          </div>
+          <!-- Syntax-highlighted snippet -->
+          <div class="code-card-body">
+<pre><code><span class="kw">class</span> <span class="cl">Developer</span> {
+  <span class="ty">String</span> name = <span class="st">"Nityanand Payasi"</span>;
+  <span class="ty">String</span> role = <span class="st">"Flutter &amp; Full Stack"</span>;
+  <span class="ty">List</span>&lt;<span class="ty">String</span>&gt; skills = [
+    <span class="st">"Flutter"</span>, <span class="st">"Dart"</span>,
+    <span class="st">"Node.js"</span>, <span class="st">"PostgreSQL"</span>,
+    <span class="st">"Bloc"</span>, <span class="st">"REST API"</span>,
+  ];
+  <span class="ty">bool</span> remoteReady = <span class="kw">true</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       DEVELOPER METRICS SECTION
+  ================================================ -->
+  <section class="metrics" id="metrics" aria-label="Developer metrics">
+    <div class="metrics-inner">
+      <div class="container">
+        <div class="metrics-grid">
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="15">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Projects Completed</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="40">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Production Features Built</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="20">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">API Integrations</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-bug" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="100">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Bugs Resolved</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       ABOUT SECTION
+  ================================================ -->
+  <section class="about" id="about" aria-label="About section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>About <span class="accent">Me</span></h2>
+      <p class="section-subtitle" data-reveal>Who I am and what I do</p>
+
+      <div class="about-grid">
+
+        <!-- Left: Bio & Highlights -->
+        <div class="about-content" data-reveal>
+          <p>
+            I'm a <strong>Flutter and Backend Developer</strong> with experience building
+            production-level applications. My expertise spans across mobile development
+            with Flutter and server-side development with Node.js, creating seamless
+            full-stack solutions from concept to deployment.
+          </p>
+          <p>
+            I have hands-on experience building a complete <strong>food delivery system</strong>
+            with advanced cart logic — extras &amp; size handling, a dynamic out-of-stock update
+            system, and a discount engine integrated via GET and POST APIs.
+          </p>
+          <p>
+            I follow <strong>Clean Architecture principles</strong> and use
+            <strong>Bloc state management</strong> to write maintainable, scalable, and
+            testable code. I'm passionate about solving real-world problems with elegant,
+            production-ready solutions.
+          </p>
+
+          <!-- Remote availability badge -->
+          <p class="about-remote">
+            <i class="fas fa-satellite-dish" aria-hidden="true"></i>
+            Available for Remote Work &nbsp;|&nbsp; IST Timezone &nbsp;|&nbsp;
+            Flexible with US / Europe Clients
+          </p>
+
+          <!-- Tech highlight chips -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              <span>Flutter (Bloc Architecture)</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <span>Node.js Backend</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <span>MySQL &amp; PostgreSQL</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+              <span>REST APIs</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-layer-group" aria-hidden="true"></i>
+              <span>Clean Architecture</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-server" aria-hidden="true"></i>
+              <span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Stats Cards -->
+        <div class="about-stats" data-reveal>
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Remote Ready</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Problem Solver</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       ARCHITECTURE SECTION
+  ================================================ -->
+  <section class="architecture" id="architecture" aria-label="Architecture section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>How I <span class="accent">Architect</span> Apps</h2>
+      <p class="section-subtitle" data-reveal>A layered approach to building scalable, maintainable applications</p>
+
+      <div class="arch-flow" data-reveal>
+
+        <!-- Layer 1: UI -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">01</span>
+              <h3>UI Layer</h3>
+              <span class="arch-tag">Presentation</span>
+            </div>
+            <p>Flutter Widgets, Screens &amp; Components. Stateless when possible, driven entirely by Bloc state. Zero business logic here — pure rendering.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Flutter Widgets</span>
+              <span class="arch-chip">Custom Painter</span>
+              <span class="arch-chip">Responsive Layout</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 2: Bloc -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">02</span>
+              <h3>Bloc / State Management</h3>
+              <span class="arch-tag">Business Logic</span>
+            </div>
+            <p>Events trigger state transitions. Each feature owns its Bloc — isolating business rules from UI, making every flow predictable and testable.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">flutter_bloc</span>
+              <span class="arch-chip">Cubit</span>
+              <span class="arch-chip">Events &amp; States</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 3: Repository -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-sitemap" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">03</span>
+              <h3>Repository Layer</h3>
+              <span class="arch-tag">Data Abstraction</span>
+            </div>
+            <p>Abstracts all data sources — API and local DB. The Bloc never talks directly to the network or database. Repositories expose clean, swappable interfaces.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Repository Pattern</span>
+              <span class="arch-chip">Abstract Classes</span>
+              <span class="arch-chip">Dependency Injection</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 4: API -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-cloud" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">04</span>
+              <h3>API Layer</h3>
+              <span class="arch-tag">Remote Data</span>
+            </div>
+            <p>Node.js REST API with Express. JWT auth, structured routes, middleware for validation and error handling. Serialized responses via model classes.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Node.js</span>
+              <span class="arch-chip">Express</span>
+              <span class="arch-chip">JWT Auth</span>
+              <span class="arch-chip">REST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 5: Database -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-database" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">05</span>
+              <h3>Database Layer</h3>
+              <span class="arch-tag">Persistence</span>
+            </div>
+            <p>Dual persistence: remote PostgreSQL/MySQL via API and local SQLite for offline-first support. Schemas designed for performance at scale.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">PostgreSQL</span>
+              <span class="arch-chip">MySQL</span>
+              <span class="arch-chip">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SKILLS SECTION
+  ================================================ -->
+  <section class="skills" id="skills" aria-label="Skills section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle" data-reveal>Technologies I work with</p>
+
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              <span>Flutter</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">D</span>
+              <span>Dart</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5" aria-hidden="true"></i>
+              <span>HTML</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt" aria-hidden="true"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js-square" aria-hidden="true"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-server" aria-hidden="true"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Ex</span>
+              <span>Express</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+              <span>REST API</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-key" aria-hidden="true"></i>
+              <span>JWT Auth</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">PG</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Sq</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-git-alt" aria-hidden="true"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-bitbucket" aria-hidden="true"></i>
+              <span>Bitbucket</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">PM</span>
+              <span>Postman</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       CODE SNIPPET SHOWCASE SECTION
+  ================================================ -->
+  <section class="code-showcase" id="code" aria-label="Code showcase">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Code <span class="accent">Quality</span></h2>
+      <p class="section-subtitle" data-reveal>Real Flutter Bloc pattern — clean, testable, production-ready</p>
+
+      <div class="showcase-wrapper" data-reveal>
+
+        <!-- Tab bar -->
+        <div class="showcase-tabs" role="tablist">
+          <button class="showcase-tab active" data-tab="tab-bloc"  role="tab" aria-selected="true">cart_bloc.dart</button>
+          <button class="showcase-tab"        data-tab="tab-event" role="tab" aria-selected="false">cart_event.dart</button>
+          <button class="showcase-tab"        data-tab="tab-state" role="tab" aria-selected="false">cart_state.dart</button>
+        </div>
+
+        <!-- Panel: Bloc -->
+        <div class="showcase-panel active" id="tab-bloc" role="tabpanel">
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_bloc.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── CartBloc ──────────────────────────────────────────────────</span>
+<span class="cs-kw">import</span> <span class="cs-st">'package:flutter_bloc/flutter_bloc.dart'</span>;
+<span class="cs-kw">import</span> <span class="cs-st">'../repository/cart_repository.dart'</span>;
+<span class="cs-kw">import</span> <span class="cs-st">'cart_event.dart'</span>; <span class="cs-kw">import</span> <span class="cs-st">'cart_state.dart'</span>;
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartBloc</span> <span class="cs-kw">extends</span> <span class="cs-cl">Bloc</span>&lt;<span class="cs-cl">CartEvent</span>, <span class="cs-cl">CartState</span>&gt; {
+  <span class="cs-kw">final</span> <span class="cs-cl">CartRepository</span> _repository;
+
+  <span class="cs-cl">CartBloc</span>({<span class="cs-kw">required</span> <span class="cs-cl">CartRepository</span> repository})
+      : _repository = repository,
+        <span class="cs-kw">super</span>(<span class="cs-cl">CartInitial</span>()) {
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">AddToCartEvent</span>&gt;(_onAddToCart);
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">RemoveFromCartEvent</span>&gt;(_onRemoveFromCart);
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">ApplyDiscountEvent</span>&gt;(_onApplyDiscount);
+  }
+
+  <span class="cs-ty">Future</span>&lt;<span class="cs-ty">void</span>&gt; _onAddToCart(
+    <span class="cs-cl">AddToCartEvent</span> event,
+    <span class="cs-cl">Emitter</span>&lt;<span class="cs-cl">CartState</span>&gt; emit,
+  ) <span class="cs-kw">async</span> {
+    emit(<span class="cs-cl">CartLoading</span>());
+    <span class="cs-kw">try</span> {
+      <span class="cs-kw">final</span> updatedCart = <span class="cs-kw">await</span> _repository.<span class="cs-fn">addItem</span>(
+        item: event.item,
+        size: event.selectedSize,
+        extras: event.extras,
+      );
+      emit(<span class="cs-cl">CartLoaded</span>(cart: updatedCart));
+    } <span class="cs-kw">catch</span> (e) {
+      emit(<span class="cs-cl">CartError</span>(message: e.<span class="cs-fn">toString</span>()));
+    }
+  }
+
+  <span class="cs-ty">Future</span>&lt;<span class="cs-ty">void</span>&gt; _onApplyDiscount(
+    <span class="cs-cl">ApplyDiscountEvent</span> event,
+    <span class="cs-cl">Emitter</span>&lt;<span class="cs-cl">CartState</span>&gt; emit,
+  ) <span class="cs-kw">async</span> {
+    <span class="cs-kw">if</span> (state <span class="cs-kw">is</span>! <span class="cs-cl">CartLoaded</span>) <span class="cs-kw">return</span>;
+    <span class="cs-kw">final</span> current = (state <span class="cs-kw">as</span> <span class="cs-cl">CartLoaded</span>).cart;
+    <span class="cs-kw">final</span> discounted = <span class="cs-kw">await</span> _repository
+        .<span class="cs-fn">applyDiscount</span>(cart: current, code: event.code);
+    emit(<span class="cs-cl">CartLoaded</span>(cart: discounted));
+  }
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Panel: Event -->
+        <div class="showcase-panel" id="tab-event" role="tabpanel" hidden>
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_event.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── Cart Events ───────────────────────────────────────────────</span>
+<span class="cs-kw">abstract class</span> <span class="cs-cl">CartEvent</span> {}
+
+<span class="cs-cm">/// Fired when user taps "Add to Cart" with size + extras.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">AddToCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-cl">CartItem</span>      item;
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span>        selectedSize;
+  <span class="cs-kw">final</span> <span class="cs-cl">List</span>&lt;<span class="cs-cl">Extra</span>&gt;   extras;
+
+  <span class="cs-cl">AddToCartEvent</span>({
+    <span class="cs-kw">required</span> <span class="cs-kw">this</span>.item,
+    <span class="cs-kw">required</span> <span class="cs-kw">this</span>.selectedSize,
+    <span class="cs-kw">this</span>.extras = <span class="cs-kw">const</span> [],
+  });
+}
+
+<span class="cs-cm">/// Removes a single item from the cart by ID.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">RemoveFromCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> itemId;
+  <span class="cs-cl">RemoveFromCartEvent</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.itemId});
+}
+
+<span class="cs-cm">/// Applies a promo/discount code to the active cart.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">ApplyDiscountEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> code;
+  <span class="cs-cl">ApplyDiscountEvent</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.code});
+}
+
+<span class="cs-kw">class</span> <span class="cs-cl">ClearCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {}</code></pre>
+          </div>
+        </div>
+
+        <!-- Panel: State -->
+        <div class="showcase-panel" id="tab-state" role="tabpanel" hidden>
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_state.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── Cart States ───────────────────────────────────────────────</span>
+<span class="cs-kw">abstract class</span> <span class="cs-cl">CartState</span> {}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartInitial</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {}
+<span class="cs-kw">class</span> <span class="cs-cl">CartLoading</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartLoaded</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {
+  <span class="cs-kw">final</span> <span class="cs-cl">Cart</span> cart;
+  <span class="cs-kw">const</span> <span class="cs-cl">CartLoaded</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.cart});
+
+  <span class="cs-cm">/// Subtotal minus any applied discount.</span>
+  <span class="cs-ty">double</span> <span class="cs-kw">get</span> totalAfterDiscount =&gt;
+      cart.subtotal - cart.discountAmount;
+
+  <span class="cs-cm">/// Sum of all item quantities in the cart.</span>
+  <span class="cs-ty">int</span> <span class="cs-kw">get</span> itemCount =&gt; cart.items.<span class="cs-fn">fold</span>(
+        <span class="cs-num">0</span>,
+        (sum, item) =&gt; sum + item.quantity,
+      );
+}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartError</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> message;
+  <span class="cs-cl">CartError</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.message});
+}</code></pre>
+          </div>
+        </div>
+
+      </div><!-- /.showcase-wrapper -->
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       PROJECTS SECTION
+  ================================================ -->
+  <section class="projects" id="projects" aria-label="Projects section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Featured <span class="accent">Projects</span></h2>
+      <p class="section-subtitle" data-reveal>Some of the things I've built</p>
+
+      <div class="projects-grid">
+
+        <!-- ---- Project 1: Food Delivery App ---- -->
+        <article class="project-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-utensils" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <a href="#" class="project-icon-link" title="View on GitHub" aria-label="GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="project-icon-link" title="Live Demo" aria-label="Live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Coaching Institute Website</h3>
+          <p class="project-desc">
+           A responsive and modern coaching institute website designed to showcase courses,
+faculty details, and student engagement features. Built using HTML, CSS, and JavaScript
+with a clean UI.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Complex Cart with extras &amp; size handling</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Out-of-stock dynamic updates</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Discount system (GET + POST API)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Bloc Architecture</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> SQLite local storage</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Html</span>
+            <span class="tech-tag">css</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">whatsapp integration</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="#" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://coaching-institute-site.netlify.app/" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project 2: Expense Tracker ---- -->
+        <article class="project-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-wallet" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <a href="#" class="project-icon-link" title="View on GitHub" aria-label="GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="project-icon-link" title="Live Demo" aria-label="Live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-desc">
+            An offline-first expense tracking application with intuitive category
+            management, visual pie-chart analytics, and full local data persistence —
+            no internet required.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Category filtering &amp; management</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Pie chart analytics</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Local database (offline-first)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Clean &amp; intuitive UI</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Charts</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="#" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="#" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project 3: Flutter CRUD App ---- -->
+        <article class="project-card" data-reveal>
+          <div class="project-card-top">
+            <div class="project-icon">
+              <i class="fas fa-layer-group" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <a href="#" class="project-icon-link" title="View on GitHub" aria-label="GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="project-icon-link" title="Live Demo" aria-label="Live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Flutter CRUD App</h3>
+          <p class="project-desc">
+            A full-featured CRUD application demonstrating clean API integration
+            with complete create, read, update, and delete operations using Bloc
+            state management and a well-structured folder architecture.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Full CRUD — GET, POST, PUT, DELETE</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> REST API integration</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Proper folder structure</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Bloc state management</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Bloc</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Clean Arch</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="#" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="#" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       PROFESSIONAL TIMELINE SECTION
+  ================================================ -->
+  <section class="timeline-section" id="journey" aria-label="Development journey">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>My <span class="accent">Journey</span></h2>
+      <p class="section-subtitle" data-reveal>The milestones that shaped me as a developer</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2021</span>
+            <h3>Discovered Flutter</h3>
+            <p>Fell in love with Dart and cross-platform development. Built first apps, mastered widget trees, navigation, and state management fundamentals.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Dart</span>
+              <span class="tl-tag">Widgets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022</span>
+            <h3>Mastered Bloc &amp; Clean Architecture</h3>
+            <p>Deep-dived into Bloc state management and Clean Architecture. Rewrote projects with proper event/state separation, repositories, and dependency injection.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Bloc</span>
+              <span class="tl-tag">Clean Arch</span>
+              <span class="tl-tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023</span>
+            <h3>Full Stack Expansion</h3>
+            <p>Learned Node.js and Express to own the full stack. Built REST APIs from scratch, implemented JWT authentication, and integrated PostgreSQL &amp; MySQL.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Node.js</span>
+              <span class="tl-tag">Express</span>
+              <span class="tl-tag">PostgreSQL</span>
+              <span class="tl-tag">JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3>Production Apps Shipped</h3>
+            <p>Delivered production-level apps including a full food delivery system with complex cart logic, discount engine, real-time stock updates, and full API integration.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Production</span>
+              <span class="tl-tag">REST API</span>
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Bloc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-current" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot timeline-dot-active"></div>
+          </div>
+          <div class="timeline-card timeline-card-now">
+            <span class="timeline-year timeline-year-now">Now</span>
+            <h3>Remote-Ready Senior Developer <span class="tl-badge">Open to Work</span></h3>
+            <p>Actively seeking remote opportunities with US/Europe teams. Bringing production-grade Flutter + Node.js expertise, clean code practices, and a scalable architecture mindset.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Remote</span>
+              <span class="tl-tag">Full Stack</span>
+              <span class="tl-tag">Open to Hire</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       WHY HIRE ME SECTION
+  ================================================ -->
+  <section class="why-hire" id="why-hire" aria-label="Why hire me section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Why Hire <span class="accent">Me?</span></h2>
+      <p class="section-subtitle" data-reveal>What sets me apart from the rest</p>
+
+      <div class="why-grid">
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
+          <h3>Clean Architecture</h3>
+          <p>I follow SOLID principles and clean architecture patterns to ensure maintainable,
+             testable, and scalable codebases.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+          <h3>Production-Ready Code</h3>
+          <p>My code is built for scale. I deliver features that are tested, optimized, and
+             ready for real-world deployment from day one.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <h3>Problem-Solving Mindset</h3>
+          <p>I break down complex problems into manageable tasks, finding elegant solutions
+             that get the job done right — not just fast.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+          <h3>Remote Collaboration Ready</h3>
+          <p>Experienced with async workflows, clear written communication, and tools like
+             Git, Postman, and GitHub for distributed teams.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i></div>
+          <h3>Scalable Backend Integration</h3>
+          <p>I build backends that grow with your product — from REST API design to full
+             database schema planning with PostgreSQL and MySQL.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-user-check" aria-hidden="true"></i></div>
+          <h3>Reliable &amp; Deadline-Driven</h3>
+          <p>I take ownership of my work, communicate proactively, and consistently
+             deliver quality results within agreed timelines.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SERVICES SECTION
+  ================================================ -->
+  <section class="services" id="services" aria-label="Services section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>What I <span class="accent">Offer</span></h2>
+      <p class="section-subtitle" data-reveal>Professional services tailored for modern product teams</p>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+          </div>
+          <h3>Mobile App Development</h3>
+          <p>Cross-platform Flutter applications with pixel-perfect UI, smooth animations, offline support, and production-grade Bloc architecture.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Flutter (iOS + Android)</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Bloc State Management</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> REST API Integration</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> SQLite Offline Support</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-server" aria-hidden="true"></i>
+          </div>
+          <h3>Backend API Development</h3>
+          <p>Scalable REST APIs with Node.js and Express — built with proper validation, JWT auth, error handling, and PostgreSQL/MySQL integration.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Node.js + Express</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> JWT Authentication</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> PostgreSQL / MySQL</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> RESTful API Design</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card service-card-featured" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-popular-badge">Most Popular</div>
+          <div class="service-icon">
+            <i class="fas fa-sitemap" aria-hidden="true"></i>
+          </div>
+          <h3>Architecture Consulting</h3>
+          <p>Review and refactor your existing codebase to implement Clean Architecture, Bloc state management, and maintainable folder structures.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Clean Architecture Audit</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Bloc Refactoring</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> In-depth Code Review</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Technical Documentation</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-primary">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+          </div>
+          <h3>Performance Optimization</h3>
+          <p>Diagnose and fix Flutter jank, slow API calls, database bottlenecks, and memory leaks. Improve startup time and render performance.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Flutter Profiling</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> API Response Optimization</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> DB Query Tuning</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Memory Leak Detection</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       TECH BLOG SECTION (UI only)
+  ================================================ -->
+  <section class="blog" id="blog" aria-label="Tech blog section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Tech <span class="accent">Insights</span></h2>
+      <p class="section-subtitle" data-reveal>Thoughts on Flutter, architecture, and remote engineering</p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">Flutter</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 5 min read</span>
+            </div>
+            <h3 class="blog-title">Mastering Bloc Architecture in Production Flutter Apps</h3>
+            <p class="blog-excerpt">A deep dive into structuring Bloc with proper events, states, and repositories — patterns I use daily in production-level applications.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Jan 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about Bloc Architecture">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">Node.js</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 7 min read</span>
+            </div>
+            <h3 class="blog-title">Building Scalable REST APIs with Node.js, Express &amp; JWT</h3>
+            <p class="blog-excerpt">How I structure Express APIs for Flutter apps — routing, auth middleware, error handling, and database integration with PostgreSQL.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Feb 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about REST APIs">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">Remote Work</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 4 min read</span>
+            </div>
+            <h3 class="blog-title">How I Stay Productive as a Remote Dev Across Time Zones</h3>
+            <p class="blog-excerpt">My async-first workflow, tooling setup, and communication habits that make me an effective remote collaborator for US and Europe teams.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Mar 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about remote work">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       CONTACT SECTION
+  ================================================ -->
+  <section class="contact" id="contact" aria-label="Contact section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle" data-reveal>Let's build something amazing together</p>
+
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info" data-reveal>
+          <h3>Let's Connect</h3>
+          <p>
+            I'm currently open to freelance opportunities and remote positions.
+            If you have a project in mind or just want to say hi, feel free to
+            reach out — I'd love to hear from you!
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:nityanand@example.com" class="contact-link">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">nityanand@example.com</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/nityanand-payasi" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/nityanand-payasi</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nityanand-payasi" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/nityanand-payasi</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">WhatsApp</span>
+                <span class="contact-link-value">+91 XXXX XXX XXX</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form (UI only) -->
+        <div class="contact-form-wrapper" data-reveal>
+          <form class="contact-form" id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Go to top">NP</a>
+          <p class="footer-role">Flutter &amp; Full Stack Developer</p>
+          <p class="footer-quote">"Built with passion and clean code."</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://github.com/nityanand-payasi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/nityanand-payasi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:nityanand@example.com" class="social-icon" aria-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Nityanand Payasi. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

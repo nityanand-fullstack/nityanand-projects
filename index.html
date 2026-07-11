@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================== META ===================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#060d1b" />
+  <meta name="description" content="Nityanand Payasi – Full Stack MERN Developer building scalable web apps and AI-powered products with React, Node.js, Express, and MongoDB. Flutter for mobile. Available for remote work." />
+  <meta name="keywords" content="MERN Stack Developer, Full Stack Developer, React Developer, Node.js Developer, Express, MongoDB, JavaScript, AI Developer, OpenAI, REST API, Flutter Developer, Remote Developer, Portfolio" />
+  <meta name="author" content="Nityanand Payasi" />
+  <meta property="og:title" content="Nityanand Payasi | Full Stack MERN &amp; AI Developer" />
+  <meta property="og:description" content="Building scalable web apps and AI-powered products with React, Node.js, Express &amp; MongoDB. Flutter for cross-platform mobile. Available for remote work." />
+  <meta property="og:type" content="website" />
+  <title>Nityanand Payasi | Full Stack MERN Developer — React · Node · MongoDB</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar (top) -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ================================================
+       STICKY NAVBAR
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Nityanand Payasi home">NP</a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home"     class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"    class="nav-link"        role="menuitem">About</a></li>
+        <li role="none"><a href="#skills"   class="nav-link"        role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"     class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#services"     class="nav-link" role="menuitem">Services</a></li>
+        <li role="none"><a href="#contact"      class="nav-link" role="menuitem">Contact</a></li>
+        <li role="none">
+          <a href="assets/resume.pdf" download class="btn btn-resume" aria-label="Download Resume">
+            <i class="fas fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ================================================
+       HERO SECTION
+  ================================================ -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <!-- Background decorative grid -->
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <!-- Glow orb -->
+    <div class="hero-glow-orb" aria-hidden="true"></div>
+
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-content" data-reveal>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Nityanand <span class="accent">Payasi</span></h1>
+
+        <!-- Typing animation -->
+        <div class="hero-typing" aria-live="polite">
+          <span class="typing-prefix">I'm a&nbsp;</span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-tagline">I build scalable, production-grade web applications &amp; AI-powered products with the <strong>MERN stack</strong>.</p>
+        <p class="hero-stack-line">
+          <span class="stack-pill stack-pill-mern"><i class="fab fa-react" aria-hidden="true"></i> React</span>
+          <span class="stack-pill stack-pill-mern"><i class="fab fa-node-js" aria-hidden="true"></i> Node.js</span>
+          <span class="stack-pill stack-pill-mern"><i class="fas fa-server" aria-hidden="true"></i> Express</span>
+          <span class="stack-pill stack-pill-mern"><i class="fas fa-leaf" aria-hidden="true"></i> MongoDB</span>
+          <span class="stack-pill stack-pill-flutter"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Flutter</span>
+        </p>
+
+        <p class="hero-remote">
+          <i class="fas fa-globe" aria-hidden="true"></i>&nbsp; Available for Remote Work
+          &nbsp;|&nbsp;
+          <i class="fas fa-clock" aria-hidden="true"></i>&nbsp; IST Timezone
+          &nbsp;|&nbsp;
+          <i class="fas fa-handshake" aria-hidden="true"></i>&nbsp; Flexible with US/Europe Clients
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code" aria-hidden="true"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Hire Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Decorative Code Card with Stack Switcher -->
+      <div class="hero-visual" data-reveal>
+        <div class="code-card">
+          <!-- Fake terminal title bar -->
+          <div class="code-card-header">
+            <span class="dot dot-red" aria-hidden="true"></span>
+            <span class="dot dot-yellow" aria-hidden="true"></span>
+            <span class="dot dot-green" aria-hidden="true"></span>
+            <div class="code-card-tabs" role="tablist" aria-label="Code stack switcher">
+              <button class="code-card-tab active" data-cc-tab="cc-jsx" role="tab" aria-selected="true">developer.jsx</button>
+              <button class="code-card-tab" data-cc-tab="cc-dart" role="tab" aria-selected="false">developer.dart</button>
+            </div>
+          </div>
+
+          <!-- JSX panel (primary — MERN) -->
+          <div class="code-card-body code-card-panel active" id="cc-jsx" role="tabpanel">
+<pre><code><span class="kw">const</span> <span class="cl">Developer</span> = () =&gt; {
+  <span class="kw">const</span> stack = [
+    <span class="st">"React"</span>, <span class="st">"Node.js"</span>, <span class="st">"Express"</span>,
+    <span class="st">"MongoDB"</span>, <span class="st">"JavaScript"</span>,
+    <span class="st">"REST API"</span>, <span class="st">"OpenAI"</span>,
+  ];
+  <span class="kw">return</span> (
+    &lt;<span class="cl">Profile</span>
+      name=<span class="st">"Nityanand Payasi"</span>
+      role=<span class="st">"Full Stack MERN Developer"</span>
+      focus=<span class="st">"Web + AI"</span>
+      stack={stack}
+      remote
+    /&gt;
+  );
+};</code></pre>
+          </div>
+
+          <!-- Dart panel (secondary — Flutter) -->
+          <div class="code-card-body code-card-panel" id="cc-dart" role="tabpanel" hidden>
+<pre><code><span class="kw">class</span> <span class="cl">Developer</span> {
+  <span class="ty">String</span> name = <span class="st">"Nityanand Payasi"</span>;
+  <span class="ty">String</span> role = <span class="st">"MERN + Flutter"</span>;
+  <span class="ty">List</span>&lt;<span class="ty">String</span>&gt; mobile = [
+    <span class="st">"Flutter"</span>, <span class="st">"Dart"</span>, <span class="st">"Bloc"</span>,
+  ];
+  <span class="ty">bool</span> remoteReady = <span class="kw">true</span>;
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       DEVELOPER METRICS SECTION
+  ================================================ -->
+  <section class="metrics" id="metrics" aria-label="Developer metrics">
+    <div class="metrics-inner">
+      <div class="container">
+        <div class="metrics-grid">
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="15">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Projects Completed</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="40">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Features Shipped</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="20">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">REST APIs Built</p>
+            </div>
+          </div>
+
+          <div class="metric-divider" aria-hidden="true"></div>
+
+          <div class="metric-card" data-reveal>
+            <div class="metric-icon-wrap">
+              <i class="fas fa-bug" aria-hidden="true"></i>
+            </div>
+            <div class="metric-body">
+              <div class="metric-counter-row">
+                <span class="metric-num" data-count="100">0</span>
+                <span class="metric-suffix">+</span>
+              </div>
+              <p class="metric-label">Bugs Resolved</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       ABOUT SECTION
+  ================================================ -->
+  <section class="about" id="about" aria-label="About section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>About <span class="accent">Me</span></h2>
+      <p class="section-subtitle" data-reveal>Who I am and what I do</p>
+
+      <div class="about-grid">
+
+        <!-- Left: Bio & Highlights -->
+        <div class="about-content" data-reveal>
+          <p>
+            I'm a <strong>Full Stack MERN Developer</strong> who ships production-ready web
+            applications and <strong>AI-powered products</strong>. My core stack is
+            <strong>React, Node.js, Express, and MongoDB</strong> — I own every layer, from
+            responsive UIs to REST APIs to database design.
+          </p>
+          <p>
+            On the web I build <strong>dashboards, e-commerce platforms, and real-time apps</strong>
+            with React, Redux, and Tailwind on the frontend and Node + Express + MongoDB on the
+            backend. I also integrate <strong>AI features</strong> — OpenAI-powered chat, content
+            generation, and smart search — into full-stack products with clean, secure APIs.
+          </p>
+          <p>
+            Alongside the web, I ship <strong>cross-platform mobile apps with Flutter</strong> when
+            a project needs it. Whatever the stack, I follow <strong>Clean Architecture</strong>,
+            write maintainable, testable code, and care about the details that make software
+            scalable.
+          </p>
+
+          <!-- Remote availability badge -->
+          <p class="about-remote">
+            <i class="fas fa-satellite-dish" aria-hidden="true"></i>
+            Available for Remote Work &nbsp;|&nbsp; IST Timezone &nbsp;|&nbsp;
+            Flexible with US / Europe Clients
+          </p>
+
+          <!-- Tech highlight chips -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fab fa-react" aria-hidden="true"></i>
+              <span>React + Redux</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <span>Node.js + Express</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-leaf" aria-hidden="true"></i>
+              <span>MongoDB + Mongoose</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+              <span>AI / OpenAI APIs</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+              <span>REST APIs &amp; JWT</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              <span>Flutter (Mobile)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Stats Cards -->
+        <div class="about-stats" data-reveal>
+          <div class="stat-card">
+            <span class="stat-num">MERN</span>
+            <span class="stat-label">Primary Stack</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">AI</span>
+            <span class="stat-label">Integrations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Remote Ready</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       ARCHITECTURE SECTION
+  ================================================ -->
+  <section class="architecture" id="architecture" aria-label="Architecture section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>How I <span class="accent">Architect</span> MERN Apps</h2>
+      <p class="section-subtitle" data-reveal>A layered, scalable approach — from React UI down to MongoDB</p>
+
+      <div class="arch-flow" data-reveal>
+
+        <!-- Layer 1: UI -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fab fa-react" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">01</span>
+              <h3>UI Layer</h3>
+              <span class="arch-tag">Presentation</span>
+            </div>
+            <p>Reusable React components &amp; pages. Presentational where possible, driven by props and store state. Zero business logic here — pure rendering and interaction.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">React Components</span>
+              <span class="arch-chip">Hooks</span>
+              <span class="arch-chip">Tailwind / Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 2: State -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">02</span>
+              <h3>State Management</h3>
+              <span class="arch-tag">Client Logic</span>
+            </div>
+            <p>Predictable state with Redux Toolkit or Context. Actions and reducers isolate UI from data flow — making every feature testable and easy to reason about.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Redux Toolkit</span>
+              <span class="arch-chip">Context API</span>
+              <span class="arch-chip">Async Thunks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 3: Services -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-sitemap" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">03</span>
+              <h3>Service Layer</h3>
+              <span class="arch-tag">Data Abstraction</span>
+            </div>
+            <p>A dedicated API/service layer (Axios clients) wraps every network call. Components never fetch directly — services expose clean, reusable, swappable interfaces.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Axios Clients</span>
+              <span class="arch-chip">Interceptors</span>
+              <span class="arch-chip">Error Handling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 4: API -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fab fa-node-js" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">04</span>
+              <h3>API Layer</h3>
+              <span class="arch-tag">Backend</span>
+            </div>
+            <p>Node.js REST API with Express. JWT auth, structured routes and controllers, middleware for validation and error handling — plus OpenAI-powered endpoints where products need AI.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">Node.js</span>
+              <span class="arch-chip">Express</span>
+              <span class="arch-chip">JWT Auth</span>
+              <span class="arch-chip">OpenAI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+
+        <!-- Layer 5: Database -->
+        <div class="arch-layer">
+          <div class="arch-layer-icon">
+            <i class="fas fa-database" aria-hidden="true"></i>
+          </div>
+          <div class="arch-layer-content">
+            <div class="arch-layer-meta">
+              <span class="arch-num">05</span>
+              <h3>Database Layer</h3>
+              <span class="arch-tag">Persistence</span>
+            </div>
+            <p>MongoDB with Mongoose schemas as the primary store — indexes and aggregation pipelines tuned for performance. PostgreSQL when a relational model fits better.</p>
+            <div class="arch-chips">
+              <span class="arch-chip">MongoDB</span>
+              <span class="arch-chip">Mongoose</span>
+              <span class="arch-chip">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="arch-note" data-reveal>
+        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+        The same layered, clean-architecture principles carry over to my <strong>Flutter</strong> mobile builds (UI → Bloc → Repository → API).
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SKILLS SECTION
+  ================================================ -->
+  <section class="skills" id="skills" aria-label="Skills section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle" data-reveal>A MERN-focused toolkit — with AI integration and Flutter for mobile</p>
+
+      <div class="skills-grid">
+
+        <!-- MERN / Web Frontend -->
+        <div class="skill-category skill-category-core" data-reveal>
+          <span class="skill-tier-badge">Core</span>
+          <div class="skill-category-header">
+            <i class="fab fa-react" aria-hidden="true"></i>
+            <h3>Frontend (React)</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-react" aria-hidden="true"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Rx</span>
+              <span>Redux</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js-square" aria-hidden="true"></i>
+              <span>JavaScript (ES6+)</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Tw</span>
+              <span>Tailwind</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5" aria-hidden="true"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt" aria-hidden="true"></i>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category skill-category-core" data-reveal>
+          <span class="skill-tier-badge">Core</span>
+          <div class="skill-category-header">
+            <i class="fab fa-node-js" aria-hidden="true"></i>
+            <h3>Backend (Node.js)</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-node-js" aria-hidden="true"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Ex</span>
+              <span>Express</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-plug" aria-hidden="true"></i>
+              <span>REST API</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-key" aria-hidden="true"></i>
+              <span>JWT Auth</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-bolt" aria-hidden="true"></i>
+              <span>Socket.io</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category skill-category-core" data-reveal>
+          <span class="skill-tier-badge">Core</span>
+          <div class="skill-category-header">
+            <i class="fas fa-database" aria-hidden="true"></i>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fas fa-leaf" aria-hidden="true"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Ms</span>
+              <span>Mongoose</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">PG</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-database" aria-hidden="true"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Sq</span>
+              <span>SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Integrations -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <h3>AI &amp; Integrations</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <span class="skill-badge">AI</span>
+              <span>OpenAI API</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-comment-dots" aria-hidden="true"></i>
+              <span>Chatbots</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-credit-card" aria-hidden="true"></i>
+              <span>Stripe</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-cloud" aria-hidden="true"></i>
+              <span>Cloudinary</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              <span>WhatsApp API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category" data-reveal>
+          <div class="skill-category-header">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+            <h3>Tools &amp; DevOps</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fab fa-git-alt" aria-hidden="true"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">PM</span>
+              <span>Postman</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-npm" aria-hidden="true"></i>
+              <span>npm / Vite</span>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-rocket" aria-hidden="true"></i>
+              <span>Vercel / Render</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile (Flutter) — secondary -->
+        <div class="skill-category skill-category-secondary" data-reveal>
+          <span class="skill-tier-badge skill-tier-badge-secondary">Secondary</span>
+          <div class="skill-category-header">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+            <h3>Mobile (Flutter)</h3>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+              <span>Flutter</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">D</span>
+              <span>Dart</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Bl</span>
+              <span>Bloc</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-badge">Gx</span>
+              <span>GetX</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       CODE SNIPPET SHOWCASE SECTION
+  ================================================ -->
+  <section class="code-showcase" id="code" aria-label="Code showcase">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Code <span class="accent">Quality</span></h2>
+      <p class="section-subtitle" data-reveal>Production patterns I use daily — Node.js + Express &amp; Flutter Bloc</p>
+
+      <div class="showcase-wrapper" data-reveal>
+
+        <!-- Tab bar -->
+        <div class="showcase-tabs" role="tablist">
+          <button class="showcase-tab active" data-tab="tab-node"  role="tab" aria-selected="true">user_controller.js</button>
+          <button class="showcase-tab"        data-tab="tab-bloc"  role="tab" aria-selected="false">cart_bloc.dart</button>
+          <button class="showcase-tab"        data-tab="tab-event" role="tab" aria-selected="false">cart_event.dart</button>
+          <button class="showcase-tab"        data-tab="tab-state" role="tab" aria-selected="false">cart_state.dart</button>
+        </div>
+
+        <!-- Panel: Bloc -->
+        <div class="showcase-panel" id="tab-bloc" role="tabpanel" hidden>
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_bloc.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── CartBloc ──────────────────────────────────────────────────</span>
+<span class="cs-kw">import</span> <span class="cs-st">'package:flutter_bloc/flutter_bloc.dart'</span>;
+<span class="cs-kw">import</span> <span class="cs-st">'../repository/cart_repository.dart'</span>;
+<span class="cs-kw">import</span> <span class="cs-st">'cart_event.dart'</span>; <span class="cs-kw">import</span> <span class="cs-st">'cart_state.dart'</span>;
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartBloc</span> <span class="cs-kw">extends</span> <span class="cs-cl">Bloc</span>&lt;<span class="cs-cl">CartEvent</span>, <span class="cs-cl">CartState</span>&gt; {
+  <span class="cs-kw">final</span> <span class="cs-cl">CartRepository</span> _repository;
+
+  <span class="cs-cl">CartBloc</span>({<span class="cs-kw">required</span> <span class="cs-cl">CartRepository</span> repository})
+      : _repository = repository,
+        <span class="cs-kw">super</span>(<span class="cs-cl">CartInitial</span>()) {
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">AddToCartEvent</span>&gt;(_onAddToCart);
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">RemoveFromCartEvent</span>&gt;(_onRemoveFromCart);
+    <span class="cs-fn">on</span>&lt;<span class="cs-cl">ApplyDiscountEvent</span>&gt;(_onApplyDiscount);
+  }
+
+  <span class="cs-ty">Future</span>&lt;<span class="cs-ty">void</span>&gt; _onAddToCart(
+    <span class="cs-cl">AddToCartEvent</span> event,
+    <span class="cs-cl">Emitter</span>&lt;<span class="cs-cl">CartState</span>&gt; emit,
+  ) <span class="cs-kw">async</span> {
+    emit(<span class="cs-cl">CartLoading</span>());
+    <span class="cs-kw">try</span> {
+      <span class="cs-kw">final</span> updatedCart = <span class="cs-kw">await</span> _repository.<span class="cs-fn">addItem</span>(
+        item: event.item,
+        size: event.selectedSize,
+        extras: event.extras,
+      );
+      emit(<span class="cs-cl">CartLoaded</span>(cart: updatedCart));
+    } <span class="cs-kw">catch</span> (e) {
+      emit(<span class="cs-cl">CartError</span>(message: e.<span class="cs-fn">toString</span>()));
+    }
+  }
+
+  <span class="cs-ty">Future</span>&lt;<span class="cs-ty">void</span>&gt; _onApplyDiscount(
+    <span class="cs-cl">ApplyDiscountEvent</span> event,
+    <span class="cs-cl">Emitter</span>&lt;<span class="cs-cl">CartState</span>&gt; emit,
+  ) <span class="cs-kw">async</span> {
+    <span class="cs-kw">if</span> (state <span class="cs-kw">is</span>! <span class="cs-cl">CartLoaded</span>) <span class="cs-kw">return</span>;
+    <span class="cs-kw">final</span> current = (state <span class="cs-kw">as</span> <span class="cs-cl">CartLoaded</span>).cart;
+    <span class="cs-kw">final</span> discounted = <span class="cs-kw">await</span> _repository
+        .<span class="cs-fn">applyDiscount</span>(cart: current, code: event.code);
+    emit(<span class="cs-cl">CartLoaded</span>(cart: discounted));
+  }
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Panel: Event -->
+        <div class="showcase-panel" id="tab-event" role="tabpanel" hidden>
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_event.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── Cart Events ───────────────────────────────────────────────</span>
+<span class="cs-kw">abstract class</span> <span class="cs-cl">CartEvent</span> {}
+
+<span class="cs-cm">/// Fired when user taps "Add to Cart" with size + extras.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">AddToCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-cl">CartItem</span>      item;
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span>        selectedSize;
+  <span class="cs-kw">final</span> <span class="cs-cl">List</span>&lt;<span class="cs-cl">Extra</span>&gt;   extras;
+
+  <span class="cs-cl">AddToCartEvent</span>({
+    <span class="cs-kw">required</span> <span class="cs-kw">this</span>.item,
+    <span class="cs-kw">required</span> <span class="cs-kw">this</span>.selectedSize,
+    <span class="cs-kw">this</span>.extras = <span class="cs-kw">const</span> [],
+  });
+}
+
+<span class="cs-cm">/// Removes a single item from the cart by ID.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">RemoveFromCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> itemId;
+  <span class="cs-cl">RemoveFromCartEvent</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.itemId});
+}
+
+<span class="cs-cm">/// Applies a promo/discount code to the active cart.</span>
+<span class="cs-kw">class</span> <span class="cs-cl">ApplyDiscountEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> code;
+  <span class="cs-cl">ApplyDiscountEvent</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.code});
+}
+
+<span class="cs-kw">class</span> <span class="cs-cl">ClearCartEvent</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartEvent</span> {}</code></pre>
+          </div>
+        </div>
+
+        <!-- Panel: State -->
+        <div class="showcase-panel" id="tab-state" role="tabpanel" hidden>
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">lib/features/cart/bloc/cart_state.dart</span>
+            <span class="showcase-lang">Dart</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── Cart States ───────────────────────────────────────────────</span>
+<span class="cs-kw">abstract class</span> <span class="cs-cl">CartState</span> {}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartInitial</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {}
+<span class="cs-kw">class</span> <span class="cs-cl">CartLoading</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartLoaded</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {
+  <span class="cs-kw">final</span> <span class="cs-cl">Cart</span> cart;
+  <span class="cs-kw">const</span> <span class="cs-cl">CartLoaded</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.cart});
+
+  <span class="cs-cm">/// Subtotal minus any applied discount.</span>
+  <span class="cs-ty">double</span> <span class="cs-kw">get</span> totalAfterDiscount =&gt;
+      cart.subtotal - cart.discountAmount;
+
+  <span class="cs-cm">/// Sum of all item quantities in the cart.</span>
+  <span class="cs-ty">int</span> <span class="cs-kw">get</span> itemCount =&gt; cart.items.<span class="cs-fn">fold</span>(
+        <span class="cs-num">0</span>,
+        (sum, item) =&gt; sum + item.quantity,
+      );
+}
+
+<span class="cs-kw">class</span> <span class="cs-cl">CartError</span> <span class="cs-kw">extends</span> <span class="cs-cl">CartState</span> {
+  <span class="cs-kw">final</span> <span class="cs-ty">String</span> message;
+  <span class="cs-cl">CartError</span>({<span class="cs-kw">required</span> <span class="cs-kw">this</span>.message});
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Panel: Node Controller -->
+        <div class="showcase-panel active" id="tab-node" role="tabpanel">
+          <div class="showcase-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="showcase-file">server/controllers/user_controller.js</span>
+            <span class="showcase-lang">Node.js</span>
+          </div>
+          <div class="showcase-body">
+<pre><code><span class="cs-cm">// ─── User Controller — Node + Express + MongoDB ────────────────</span>
+<span class="cs-kw">const</span> User    = <span class="cs-fn">require</span>(<span class="cs-st">'../models/User'</span>);
+<span class="cs-kw">const</span> bcrypt  = <span class="cs-fn">require</span>(<span class="cs-st">'bcryptjs'</span>);
+<span class="cs-kw">const</span> jwt     = <span class="cs-fn">require</span>(<span class="cs-st">'jsonwebtoken'</span>);
+
+<span class="cs-cm">/// POST /api/auth/register — creates a new user + JWT.</span>
+<span class="cs-kw">exports</span>.register = <span class="cs-kw">async</span> (req, res) =&gt; {
+  <span class="cs-kw">try</span> {
+    <span class="cs-kw">const</span> { name, email, password } = req.body;
+
+    <span class="cs-kw">if</span> (<span class="cs-kw">await</span> User.<span class="cs-fn">findOne</span>({ email })) {
+      <span class="cs-kw">return</span> res.<span class="cs-fn">status</span>(<span class="cs-num">409</span>).<span class="cs-fn">json</span>({ error: <span class="cs-st">'Email already in use'</span> });
+    }
+
+    <span class="cs-kw">const</span> hash = <span class="cs-kw">await</span> bcrypt.<span class="cs-fn">hash</span>(password, <span class="cs-num">12</span>);
+    <span class="cs-kw">const</span> user = <span class="cs-kw">await</span> User.<span class="cs-fn">create</span>({ name, email, password: hash });
+
+    <span class="cs-kw">const</span> token = jwt.<span class="cs-fn">sign</span>(
+      { id: user._id, role: user.role },
+      process.env.JWT_SECRET,
+      { expiresIn: <span class="cs-st">'7d'</span> },
+    );
+
+    res.<span class="cs-fn">status</span>(<span class="cs-num">201</span>).<span class="cs-fn">json</span>({
+      user:  { id: user._id, name: user.name, email: user.email },
+      token,
+    });
+  } <span class="cs-kw">catch</span> (err) {
+    res.<span class="cs-fn">status</span>(<span class="cs-num">500</span>).<span class="cs-fn">json</span>({ error: <span class="cs-st">'Server error'</span> });
+  }
+};
+
+<span class="cs-cm">/// GET /api/users/:id — protected, returns clean user shape.</span>
+<span class="cs-kw">exports</span>.getById = <span class="cs-kw">async</span> (req, res) =&gt; {
+  <span class="cs-kw">const</span> user = <span class="cs-kw">await</span> User.<span class="cs-fn">findById</span>(req.params.id).<span class="cs-fn">select</span>(<span class="cs-st">'-password'</span>);
+  <span class="cs-kw">if</span> (!user) <span class="cs-kw">return</span> res.<span class="cs-fn">status</span>(<span class="cs-num">404</span>).<span class="cs-fn">json</span>({ error: <span class="cs-st">'Not found'</span> });
+  res.<span class="cs-fn">json</span>(user);
+};</code></pre>
+          </div>
+        </div>
+
+      </div><!-- /.showcase-wrapper -->
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       PROJECTS SECTION
+  ================================================ -->
+  <section class="projects" id="projects" aria-label="Projects section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Featured <span class="accent">Projects</span></h2>
+      <p class="section-subtitle" data-reveal>Full-stack web &amp; AI products — plus cross-platform mobile</p>
+
+      <div class="projects-grid">
+
+        <!-- ---- FEATURED: AI SaaS Platform (MERN + OpenAI) ---- -->
+        <article class="project-card project-card-featured" data-reveal data-stack="ai">
+          <div class="featured-inner">
+
+            <div class="featured-main">
+              <div class="project-card-top">
+                <div class="project-icon project-icon-ai">
+                  <i class="fas fa-robot" aria-hidden="true"></i>
+                </div>
+                <div class="project-links-top">
+                  <span class="project-stack-badge project-stack-badge-ai">AI · Full Stack</span>
+                  <a href="https://github.com/nityanand-fullstack/contentforge-ai" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="ContentForge AI GitHub repository">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+
+              <span class="featured-flag"><i class="fas fa-star" aria-hidden="true"></i> Flagship Project</span>
+              <h3 class="project-title">ContentForge — AI Content Generation SaaS</h3>
+              <p class="project-desc">
+                A full-stack AI SaaS (~10K LOC) that turns a single prompt into tone- and
+                platform-aware marketing copy (LinkedIn, Instagram) via the Google Gemini API, plus
+                AI images via Pollinations. Includes JWT auth, a server-enforced credit system,
+                Razorpay payments, generation history, and a full admin dashboard — React 19 SPA on
+                an Express 5 REST API backed by MySQL / TiDB.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express 5</span>
+                <span class="tech-tag">MySQL / TiDB</span>
+                <span class="tech-tag tech-tag-ai">Gemini API</span>
+                <span class="tech-tag">Razorpay</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="https://github.com/nityanand-fullstack/contentforge-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="featured-aside">
+              <h4 class="featured-aside-title">Key Highlights</h4>
+              <ul class="project-features">
+                <li><i class="fas fa-check" aria-hidden="true"></i> AI text (Gemini) + image (Pollinations) generation</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Credit-metering middleware (text = 1, image = 2)</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> JWT auth + bcrypt, separate user / admin scopes</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Razorpay payments, HMAC-SHA256 verified server-side</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Admin dashboard across 20+ REST endpoints</li>
+              </ul>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ---- Project: System Design Visualizer (MERN + Gemini) ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-diagram-project" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">MERN · AI</span>
+              <a href="https://github.com/nityanand-fullstack/System-Design-Visualizer-AI" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="System Design Visualizer GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">System Design Visualizer</h3>
+          <p class="project-desc">
+            A full-stack MERN app to explore system designs — Chat App, E-commerce, URL Shortener
+            and more — each with diagrams, components, and request flow, plus an AI "Explain" button
+            powered by Google Gemini. React (Vite) + Express REST API + MongoDB.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Searchable, filterable system cards</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Detail view: diagram, components &amp; flow</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> AI "Explain" modal via Gemini (graceful fallback)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> REST API + Mongoose, admin add page</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag tech-tag-ai">Gemini</span>
+            <span class="tech-tag">Vite</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/System-Design-Visualizer-AI" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: ToolBase — 173 free online tools ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-toolbox" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">React · Next.js</span>
+              <a href="https://nityanand-web-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo" aria-label="ToolBase live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">ToolBase — 173 Free Online Tools</h3>
+          <p class="project-desc">
+            A traffic-first, SEO-focused platform of 173 free online tools across 9 categories
+            (Text, PDF, Image, Developer, SEO, AI &amp; more) that run 100% in the browser — no
+            backend, no uploads, privacy-first. Built with Next.js 15, React 19 &amp; TypeScript.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> 173 tools, fully client-side (Canvas / Web Crypto / Workers)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Data-driven engine architecture (add a tool in 4 steps)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Programmatic SEO: JSON-LD + 430+ prerendered pages</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> 441 unit tests, ~97% utility coverage</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Next.js 15</span>
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">Vitest</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://nityanand-web-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: MERN E-Commerce App ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-cart-shopping" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">MERN</span>
+              <a href="https://github.com/nityanand-fullstack/fullstack-ecommerce-app" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="E-Com App GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/nityanand-fullstack/fullstack-ecommerce-app" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source on GitHub" aria-label="E-Com App source">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">E-Com App — MERN Storefront + Admin</h3>
+          <p class="project-desc">
+            A full-stack MERN e-commerce app with a customer storefront (browse, cart, checkout,
+            orders, reviews) and an admin dashboard (products, categories, orders, users) —
+            JWT auth + role-based access, Cloudinary uploads, and Razorpay test-mode payments.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Storefront + admin dashboard with KPI tiles</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> JWT auth + role-based access control</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Razorpay checkout — orders created only after payment</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Cloudinary uploads + server-side cart &amp; reviews</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">React 18</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Razorpay</span>
+            <span class="tech-tag">Cloudinary</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/fullstack-ecommerce-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://github.com/nityanand-fullstack/fullstack-ecommerce-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fab fa-github" aria-hidden="true"></i> View Code
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: Real Estate Website ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-house" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">Web</span>
+              <a href="https://github.com/nityanand-fullstack/real-estate-website" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="Real Estate Website GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://homehunt-india.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo" aria-label="Real Estate Website live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Real Estate Website</h3>
+          <p class="project-desc">
+            A simple, responsive real estate website built with vanilla HTML, CSS, and JavaScript.
+            Users can browse property listings and filter them by price, location, and type — fast
+            and lightweight, with no frameworks.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Property listing page with images &amp; details</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Filter by price, location &amp; type</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Fully responsive (mobile + desktop)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Fast &amp; lightweight — no frameworks</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/real-estate-website" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://homehunt-india.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: Coaching Institute Website ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">Web</span>
+              <a href="https://github.com/nityanand-fullstack/coaching-institute-site" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="Coaching Institute Website GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://coaching-institute-site.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo" aria-label="Coaching Institute Website live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Coaching Institute Website</h3>
+          <p class="project-desc">
+            A responsive coaching institute website built with HTML, CSS, and JavaScript.
+            It showcases courses (JEE, NEET, etc.), faculty details, student testimonials, and
+            contact information in a clean, mobile-friendly layout.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Courses section (JEE, NEET, etc.)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Faculty details &amp; student testimonials</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Contact section</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Fully responsive design</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/coaching-institute-site" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://coaching-institute-site.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: Doctor Website ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-user-doctor" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">Web</span>
+              <a href="https://github.com/nityanand-fullstack/doctor-website" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="Doctor Website GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://startling-melomakarona-c765e2.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo" aria-label="Doctor Website live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Doctor Website</h3>
+          <p class="project-desc">
+            A modern, responsive doctor / clinic website built with HTML, CSS, and JavaScript —
+            featuring doctor profiles, a services section, and an appointment interface in a clean
+            mobile-friendly layout.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Doctor profiles</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Services section</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Appointment interface</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Fully responsive design</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/doctor-website" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://startling-melomakarona-c765e2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: Élan Events ---- -->
+        <article class="project-card" data-reveal data-stack="mern">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-mern">
+              <i class="fas fa-champagne-glasses" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge">Web</span>
+              <a href="https://github.com/nityanand-fullstack/elite-event-decor" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="View on GitHub" aria-label="Élan Events GitHub repository">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://elite-event-decor.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Live Demo" aria-label="Élan Events live demo">
+                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Élan Events — Event Decoration Agency</h3>
+          <p class="project-desc">
+            A premium single-page website for an event decoration agency, built with plain HTML,
+            CSS, and JavaScript — no frameworks, no build step. A long-scroll landing page designed
+            to look expensive and client-ready, with rich interactions throughout.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Premium ivory · emerald · gold theme &amp; typography</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Hero with rotating images &amp; animated counters</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Masonry gallery with filters &amp; keyboard lightbox</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> SEO-friendly — Open Graph, JSON-LD, semantic HTML</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://github.com/nityanand-fullstack/elite-event-decor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://elite-event-decor.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              <i class="fas fa-rocket" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- ---- Project: Flutter Food Delivery ---- -->
+        <article class="project-card" data-reveal data-stack="flutter">
+          <div class="project-card-top">
+            <div class="project-icon project-icon-flutter">
+              <i class="fas fa-utensils" aria-hidden="true"></i>
+            </div>
+            <div class="project-links-top">
+              <span class="project-stack-badge project-stack-badge-flutter">Flutter</span>
+            </div>
+          </div>
+
+          <h3 class="project-title">Food Delivery App</h3>
+          <p class="project-desc">
+            A complete food-delivery mobile app with a production-grade cart engine —
+            extras, size handling, dynamic out-of-stock state, and a promo / discount engine
+            wired to GET + POST APIs.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Complex cart with extras &amp; size handling</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Out-of-stock dynamic updates</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Discount engine (GET + POST API)</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Bloc architecture + SQLite cache</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Bloc</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">SQLite</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       PROFESSIONAL TIMELINE SECTION
+  ================================================ -->
+  <section class="timeline-section" id="journey" aria-label="Development journey">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>My <span class="accent">Journey</span></h2>
+      <p class="section-subtitle" data-reveal>The milestones that shaped me as a developer</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2021</span>
+            <h3>Discovered Flutter</h3>
+            <p>Fell in love with Dart and cross-platform development. Built first apps, mastered widget trees, navigation, and state management fundamentals.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Dart</span>
+              <span class="tl-tag">Widgets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022</span>
+            <h3>Mastered Bloc &amp; Clean Architecture</h3>
+            <p>Deep-dived into Bloc state management and Clean Architecture. Rewrote projects with proper event/state separation, repositories, and dependency injection.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Bloc</span>
+              <span class="tl-tag">Clean Arch</span>
+              <span class="tl-tag">SQLite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023</span>
+            <h3>Backend &amp; MERN Expansion</h3>
+            <p>Picked up Node.js and Express to own the full stack. Built REST APIs from scratch, implemented JWT auth, and integrated MongoDB, PostgreSQL, and MySQL — ready to ship full-stack web apps.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Node.js</span>
+              <span class="tl-tag">Express</span>
+              <span class="tl-tag">MongoDB</span>
+              <span class="tl-tag">JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h3>React + Production Apps Shipped</h3>
+            <p>Went deep on React, Redux, and Tailwind to complete the MERN stack. Shipped production apps on both stacks — a Flutter food-delivery system and React-based admin dashboards backed by Node + MongoDB APIs.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">React</span>
+              <span class="tl-tag">Redux</span>
+              <span class="tl-tag">Tailwind</span>
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Bloc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-current" data-reveal>
+          <div class="timeline-marker">
+            <div class="timeline-dot timeline-dot-active"></div>
+          </div>
+          <div class="timeline-card timeline-card-now">
+            <span class="timeline-year timeline-year-now">Now</span>
+            <h3>MERN + Flutter Remote-Ready Developer <span class="tl-badge">Open to Work</span></h3>
+            <p>Actively seeking remote opportunities with US / Europe teams. One engineer who delivers across web (React + Node + MongoDB) and mobile (Flutter + Bloc) — production-grade code, clean architecture, scalable mindset.</p>
+            <div class="timeline-tags">
+              <span class="tl-tag">Remote</span>
+              <span class="tl-tag">MERN Stack</span>
+              <span class="tl-tag">Flutter</span>
+              <span class="tl-tag">Open to Hire</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       WHY HIRE ME SECTION
+  ================================================ -->
+  <section class="why-hire" id="why-hire" aria-label="Why hire me section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Why Hire <span class="accent">Me?</span></h2>
+      <p class="section-subtitle" data-reveal>What sets me apart from the rest</p>
+
+      <div class="why-grid">
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
+          <h3>Clean Architecture</h3>
+          <p>I follow SOLID principles and clean architecture patterns to ensure maintainable,
+             testable, and scalable codebases.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+          <h3>Production-Ready Code</h3>
+          <p>My code is built for scale. I deliver features that are tested, optimized, and
+             ready for real-world deployment from day one.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <h3>Problem-Solving Mindset</h3>
+          <p>I break down complex problems into manageable tasks, finding elegant solutions
+             that get the job done right — not just fast.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-globe" aria-hidden="true"></i></div>
+          <h3>Remote Collaboration Ready</h3>
+          <p>Experienced with async workflows, clear written communication, and tools like
+             Git, Postman, and GitHub for distributed teams.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i></div>
+          <h3>Web + Mobile From One Engineer</h3>
+          <p>I deliver across both stacks — React + Node + MongoDB for web and Flutter + Bloc
+             for mobile. One contractor, consistent architecture, fewer hand-offs.</p>
+        </div>
+
+        <div class="why-card" data-reveal>
+          <div class="why-icon"><i class="fas fa-user-check" aria-hidden="true"></i></div>
+          <h3>Reliable &amp; Deadline-Driven</h3>
+          <p>I take ownership of my work, communicate proactively, and consistently
+             deliver quality results within agreed timelines.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SERVICES SECTION
+  ================================================ -->
+  <section class="services" id="services" aria-label="Services section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>What I <span class="accent">Offer</span></h2>
+      <p class="section-subtitle" data-reveal>Professional services tailored for modern product teams</p>
+
+      <div class="services-grid">
+
+        <div class="service-card service-card-featured" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-popular-badge">Most Popular</div>
+          <div class="service-icon">
+            <i class="fab fa-react" aria-hidden="true"></i>
+          </div>
+          <h3>MERN Web App Development</h3>
+          <p>Full-stack web apps end-to-end — React frontends, Node + Express APIs, MongoDB schemas, JWT auth, and a clean deployable codebase from day one.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> React + Redux / Context</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Node.js + Express APIs</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> MongoDB + Mongoose</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> JWT Authentication</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-primary">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+          </div>
+          <h3>Flutter Mobile Apps</h3>
+          <p>Cross-platform Flutter applications with pixel-perfect UI, smooth animations, offline support, and production-grade Bloc architecture.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Flutter (iOS + Android)</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Bloc State Management</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> REST API Integration</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> SQLite Offline Support</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-server" aria-hidden="true"></i>
+          </div>
+          <h3>API &amp; Backend Engineering</h3>
+          <p>Standalone REST APIs with Node.js + Express. Validation, JWT auth, error handling, and MongoDB / PostgreSQL integration — designed to scale with your product.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Node.js + Express</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> MongoDB / PostgreSQL</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> JWT Auth + RBAC</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> RESTful API Design</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <i class="fas fa-sitemap" aria-hidden="true"></i>
+          </div>
+          <h3>Architecture &amp; Code Review</h3>
+          <p>Review and refactor your existing React or Flutter codebase. Clean Architecture, Bloc / Redux refactoring, and maintainable folder structures.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Clean Architecture Audit</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Bloc / Redux Refactor</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> In-depth Code Review</li>
+            <li><i class="fas fa-check-circle" aria-hidden="true"></i> Technical Documentation</li>
+          </ul>
+          <div class="service-cta">
+            <a href="#contact" class="btn btn-sm btn-outline">Let's Talk</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       TECH BLOG SECTION (UI only)
+  ================================================ -->
+  <section class="blog" id="blog" aria-label="Tech blog section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Tech <span class="accent">Insights</span></h2>
+      <p class="section-subtitle" data-reveal>Thoughts on MERN, AI integration, and remote engineering</p>
+
+      <div class="blog-grid">
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">AI + MERN</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 6 min read</span>
+            </div>
+            <h3 class="blog-title">Adding OpenAI to a MERN App Without Breaking the Backend</h3>
+            <p class="blog-excerpt">How I structure Node/Express endpoints for streaming AI responses, handle rate limits and token costs, and keep the OpenAI key safely server-side.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Jan 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about adding OpenAI to a MERN app">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">MERN</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 7 min read</span>
+            </div>
+            <h3 class="blog-title">Why MERN + Flutter Is the Best Solo-Developer Stack</h3>
+            <p class="blog-excerpt">React for the web, Flutter for mobile, Node + MongoDB on the backend. Why this combo lets a single engineer ship complete products — and where the trade-offs lie.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Feb 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about the MERN + Flutter stack">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card" data-reveal>
+          <div class="blog-card-inner">
+            <div class="blog-card-top">
+              <span class="blog-category">Remote Work</span>
+              <span class="blog-read-time"><i class="fas fa-clock" aria-hidden="true"></i> 4 min read</span>
+            </div>
+            <h3 class="blog-title">How I Stay Productive as a Remote Dev Across Time Zones</h3>
+            <p class="blog-excerpt">My async-first workflow, tooling setup, and communication habits that make me an effective remote collaborator for US and Europe teams.</p>
+            <div class="blog-footer">
+              <span class="blog-date"><i class="fas fa-calendar" aria-hidden="true"></i> Mar 2024</span>
+              <a href="#" class="blog-read-more" aria-label="Read more about remote work">
+                Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       CONTACT SECTION
+  ================================================ -->
+  <section class="contact" id="contact" aria-label="Contact section">
+    <div class="container">
+
+      <h2 class="section-title" data-reveal>Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle" data-reveal>Let's build something amazing together</p>
+
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info" data-reveal>
+          <h3>Let's Connect</h3>
+          <p>
+            I'm currently open to freelance opportunities and remote positions.
+            If you have a project in mind or just want to say hi, feel free to
+            reach out — I'd love to hear from you!
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:nityanandpayasi.dev@gmail.com" class="contact-link">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">nityanandpayasi.dev@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/nityanand-payasi-7281543a3" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/nityanand-payasi-7281543a3</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/nityanand-fullstack" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/nityanand-fullstack</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              <div>
+                <span class="contact-link-label">WhatsApp</span>
+                <span class="contact-link-value">+91 XXXX XXX XXX</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form (UI only) -->
+        <div class="contact-form-wrapper" data-reveal>
+          <form class="contact-form" id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-content">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Go to top">NP</a>
+          <p class="footer-role">Full Stack MERN &amp; AI Developer</p>
+          <p class="footer-quote">"Built with passion and clean code."</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://github.com/nityanand-fullstack" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nityanand-payasi-7281543a3" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:nityanandpayasi.dev@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Nityanand Payasi. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Back to top floating button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll to top" type="button">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

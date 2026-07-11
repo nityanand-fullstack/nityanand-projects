@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in LaTeX
+% Template based on: Jake Gutierrez (https://github.com/sb2nov/resume) — MIT License
+% Adapted for: Nityanand Payasi — Full Stack MERN Developer
+% Single-file, Overleaf-ready (compile with pdfLaTeX)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Nityanand Payasi} \\ \vspace{3pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ +91 9407106510 ~
+    \href{mailto:nityanandpayasi.dev@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{nityanandpayasi.dev@gmail.com}} \\ \vspace{3pt}
+    \href{https://www.linkedin.com/in/nityanand-payasi-7281543a3}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nityanand-payasi}} ~
+    \href{https://github.com/nityanand-fullstack}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/nityanand-fullstack}} ~
+    \href{https://nityanand-web-portfolio.netlify.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{nityanand-web-portfolio.netlify.app}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\vspace{2pt}
+\small{Full Stack MERN Developer with \textbf{2.5+ years} of professional experience building scalable,
+production-ready web applications with \textbf{React, Node.js, Express, and MongoDB}, including AI-powered SaaS
+features. Secondary experience in \textbf{Flutter} mobile development. Strong focus on clean architecture,
+REST APIs, and end-to-end delivery.}
+\vspace{-6pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: JavaScript (ES6+), TypeScript, Dart, SQL, HTML5, CSS3} \\
+      \textbf{Frameworks \& Libraries}{: React, Next.js, Node.js, Express, Redux, Tailwind CSS, Flutter} \\
+      \textbf{Databases}{: MongoDB, Mongoose, MySQL, PostgreSQL, SQLite} \\
+      \textbf{AI \& Integrations}{: OpenAI API, Google Gemini, Razorpay, Cloudinary, REST APIs, JWT Auth} \\
+      \textbf{Tools \& Platforms}{: Git, GitHub, Postman, Vite, Vitest, Netlify, Vercel}
+    }}
+\end{itemize}
+\vspace{-14pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\vspace{1pt}
+\textbf{\small 2.5+ Years of Professional Experience}
+\vspace{-6pt}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Logisch Technologies}{Noida, India}
+    {Software Developer}{Jan 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Build \textbf{MERN} stack SaaS applications as the primary focus --- scalable React.js frontends and Node.js / Express REST APIs.}
+      \resumeItem{Design and integrate \textbf{MongoDB} databases and \textbf{JWT} authentication systems for secure, production-ready features.}
+      \resumeItem{Develop \textbf{AI-powered SaaS} features and modern web applications end-to-end.}
+      \resumeItem{Additionally contribute to \textbf{Flutter} mobile app development, including REST API integration and feature implementation.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Microdot Tech Aspire Solution}{Noida, India}
+    {Software Developer}{Jan 2024 -- Dec 2024}
+    \resumeItemListStart
+      \resumeItem{Developed and maintained full-stack web applications using the \textbf{MERN} stack (React, Node.js, Express, MongoDB).}
+      \resumeItem{Built responsive React.js user interfaces and integrated REST APIs.}
+      \resumeItem{Collaborated in an \textbf{Agile} team using Git to deliver scalable business applications.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{ContentForge --- AI Content Generation SaaS} $|$ \emph{React, Express, MySQL, Gemini API, Razorpay}}
+    {\href{https://github.com/nityanand-fullstack/contentforge-ai}{\underline{GitHub}}}
+    \resumeItemListStart
+      \resumeItem{Built a full-stack AI SaaS (\textasciitilde10K LOC) that turns a single prompt into tone- and platform-aware marketing copy and AI images using the \textbf{Google Gemini} API.}
+      \resumeItem{Implemented \textbf{JWT} auth with bcrypt, a server-enforced credit-metering system, and \textbf{Razorpay} payments verified with \textbf{HMAC-SHA256} signatures, plus a full admin dashboard across \textbf{20+ REST endpoints}.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{ToolBase --- 173 Free Online Tools} $|$ \emph{Next.js 15, React 19, TypeScript, Tailwind}}
+    {\href{https://nityanand-web-portfolio.netlify.app/}{\underline{Live}}}
+    \resumeItemListStart
+      \resumeItem{Engineered a traffic-first platform of \textbf{173 browser-only tools} across 9 categories (Text, PDF, Image, Developer, SEO, AI) with no backend --- all processing via Canvas / Web Crypto / Web Workers.}
+      \resumeItem{Designed a data-driven, engine-based architecture with \textbf{programmatic SEO} (430+ prerendered pages) and \textbf{441 unit tests} at \textasciitilde97\% coverage.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{E-Com App --- MERN Storefront + Admin} $|$ \emph{React, Node.js, Express, MongoDB}}
+    {\href{https://github.com/nityanand-fullstack/fullstack-ecommerce-app}{\underline{GitHub}}}
+    \resumeItemListStart
+      \resumeItem{Built a full-stack MERN e-commerce app with a customer storefront (catalog, cart, checkout, orders, reviews) and an admin dashboard (products, categories, orders, users).}
+      \resumeItem{Added \textbf{JWT auth with role-based access control}, Cloudinary image uploads, and \textbf{Razorpay} test-mode checkout that creates orders only after a verified payment.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Coaching Institute Website} $|$ \emph{HTML, CSS, JavaScript}}
+    {\href{https://coaching-institute-site.netlify.app/}{\underline{Live}}}
+    \resumeItemListStart
+      \resumeItem{Developed a responsive coaching institute website (courses --- JEE, NEET; faculty, testimonials, contact) with semantic, SEO-friendly markup; deployed on Netlify.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {AKS University}{Satna, Madhya Pradesh}
+      {Master of Computer Applications (MCA), Computer Science}{2022 -- 2024}
+    \resumeSubheading
+      {Government Degree College}{Satna, Madhya Pradesh}
+      {Bachelor of Science (B.Sc.), Mathematics}{2019 -- 2022}
+\resumeSubHeadingListEnd
+
+\end{document}
